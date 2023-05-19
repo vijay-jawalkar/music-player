@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gaana Studio</title>
+
+    <script
+      src="https://kit.fontawesome.com/5f2cf94554.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="musicstyle.css" />
+  </head>
+  <body>
+   
+      <header class = "background-color-blue">
+        <!-- <section id="top_bar"> -->
+        <nav class="navigation-bar">
+          <!--This div contains the logo and title of the page-->
+          <div class="title-combo">
+            <div class="website-logo">
+              <img
+                src="https://icon-library.com/images/music-player-icon/music-player-icon-20.jpg"
+              />
+            </div>
+            <div class="website-name">
+              <h2>
+                Gaana
+              </h2>
+              <h5>
+                Studio
+              </h5>
+            </div>
+          </div>
+
+
+          <!-- theme converter -->
+
+         <div>
+          <h4> <a href="#theme-option-box">Theme <i class="fas fa-chevron-circle-down"></i></a> </h4>
+        
+        <div class="theme-options" id="theme-option-box">
+          <p id = "dark">Dark </p>
+          <hr>
+          
+          <p id = "light" style="color:#162252;"> Light </a></p>
+          <hr>
+          <p > <a href="#" style="color:red; font-weight:bolder;">Close</a> </p>
+      </div>
+         </div>
+
+
+          <!-- this is the animated favourites text -->
+          <div class="favs">
+            <h4>
+              Favourites
+            </h4>
+          </div>
+          <!-- this is for search bar -->
+          <div class="search-bar">
+            <div>
+              <!-- magnifying glass- search icon -->
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search" />
+            <div>
+              <!-- mic icon -->
+              <i class="fas fa-microphone mic-ico"></i>
+            </div>
+          </div>
+          <!-- this is for notification bell -->
+          <div class="notification-bell">
+            <i class="fa-sharp fa-regular fa-bell"></i> Notifications
+          </div>
+          <!-- this is for profile picture -->
+          <div class="profile-pic">
+            <img
+              src="https://i.pinimg.com/736x/15/fc/ff/15fcffbfe9d7bda23f86af8f24ed3e75--music-life-singer.jpg"
+            />
+          </div>
+        </nav>
+        <!-- </section> -->
+      </header>
+
+      <main class = "background-color-blue">
+        <!-- aside section 1 -->
+        <aside class="aside section1">
+          <!-- top songs of particular genre -->
+          <section class="carousel">
+            <img
+              src="https://c.saavncdn.com/498/Gym-Workout-Music-Series-English-2015-500x500.jpg"
+              alt="workout_songs"
+            />
+
+            <img
+              src="https://www.geekguruji.com/wp-content/uploads/2017/10/Motivational-Hindi-Songs-for-Success-1.jpg"
+              alt="motivational songs"
+            />
+
+            <img
+              src="https://i.ytimg.com/vi/1U1OSYx0DgI/maxresdefault.jpg"
+              alt="latino"
+            />
+          </section>
+
+          <!-- latest release songs content -->
+          <section id="latest-release">
+            <h3>Latest Release</h3>
+            <div class="latest-release-content">
+              <!-- 1st card -->
+              <div class="card">
+                <div>
+                  <img
+                    src="https://cover.djpunjab.is/53524/300x700/Yaad-Aati-Hai-Harrdy-Sandhu.jpg"
+                    alt="song_1"
+                  />
+                 
+                </div>
+                <div class="song-description">
+                  <h3>Yaad Aati Hai</h3>
+
+                  <p>10 March 2023</p>
+                </div>
+
+                <div class = "play-pause-button"> 
+                  <audio id = "player1" > 
+                    <source src="Yaad Aati Hai(PagalWorld.com.se).mp3" type="audio/mpeg">
+                  </audio>
+                    <div class = "audio-control">
+
+                        <!-- <button onclick = "document.getElementById('player').volume += 0.1"> <i class="fa-sharp fa-solid fa-circle-plus fa-lg"></i></button> -->
+                       <button onclick = "document.getElementById('player1').play()"> <i class="fa-solid fa-circle-play fa-lg"></i></button>
+                      <br> <button onclick = "document.getElementById('player1').pause()"> <i class="fa-sharp fa-solid fa-circle-pause fa-lg"></i></button>
+                      
+                       <!-- <button onclick = "document.getElementById('player').volume -= 0.1"> <i class="fa-solid fa-circle-minus fa-lg"></i></button> -->
+                    </div>
+                </div>
+
+               <!-- try start -->
+         
+           <!-- try end -->
+                
+              </div>
+
+              <!-- 2nd card -->
+              <div class="card">
+                
+                <div>
+                  <img
+                    src="https://images.news18.com/ibnlive/uploads/2023/02/akshay-kumar-emraan-hashmi-main-khiladi.jpg"
+                    alt="song_2"
+                  />
+                 
+                </div>
+                <div class="song-description">
+                  <h3>Main Khiladi</h3>
+
+                  <p>01 Feb 2023</p>
+                </div>
+              
+                <div class = "play-pause-button">
+                  <audio id = "player2" > 
+                    <source src="Main Khiladi Tu Anari Main Anari Tu Khiladi-(Pagalworld.network).mp3" type="audio/mpeg">
+                  </audio>
+                    <div class = "audio-control">
+
+                        <!-- <button onclick = "document.getElementById('player').volume += 0.1"> <i class="fa-sharp fa-solid fa-circle-plus fa-lg"></i></button> -->
+                       <button onclick = "document.getElementById('player2').play()"> <i class="fa-solid fa-circle-play fa-lg"></i></button>
+                       <br> <button onclick = "document.getElementById('player2').pause()"> <i class="fa-sharp fa-solid fa-circle-pause fa-lg"></i></button>
+                      
+                       <!-- <button onclick = "document.getElementById('player').volume -= 0.1"> <i class="fa-solid fa-circle-minus fa-lg"></i></button> -->
+                    </div>
+                </div>
+                
+              </div>
+
+              <!-- 3rd card -->
+              <div class="card">
+               
+               <div>
+                <img
+                  src="https://c.saavncdn.com/194/Piya-Re-Hindi-2023-20230206170809-500x500.jpg"
+                  alt="song_1"
+                />
+                
+              </div>
+              <div class="song-description">
+                <h3>Piya Re</h3>
+
+                <p>09 Feb 2023</p>
+              </div>
+             
+              <div class = "play-pause-button">
+                <audio id = "player3" > 
+                  <source src="Piya Re(PagalWorld.com.se).mp3" type="audio/mpeg">
+                </audio>
+                  <div class = "audio-control">
+
+                      <!-- <button onclick = "document.getElementById('player3').volume += 0.1"> <i class="fa-sharp fa-solid fa-circle-plus fa-lg"></i></button> -->
+                     <button onclick = "document.getElementById('player3').play()"> <i class="fa-solid fa-circle-play fa-lg"></i></button>
+                     <br>  <button onclick = "document.getElementById('player3').pause()"> <i class="fa-sharp fa-solid fa-circle-pause fa-lg"></i></button>
+                    
+                     <!-- <button onclick = "document.getElementById('player').volume -= 0.1"> <i class="fa-solid fa-circle-minus fa-lg"></i></button> -->
+                  </div>
+              </div>
+               
+          </div>
+
+              <!-- 4th card -->
+              <div class="card">
+               
+                 <div>
+                  <img
+                    src="https://covers.djpunjab.pro/image/504429/Silicone-1.jpg"
+                    alt="song_1"
+                  />
+                 
+                </div>
+                <div class="song-description">
+                  <h3>Silicone</h3>
+  
+                  <p>20 April 2023</p>
+                </div>
+
+                <div class = "play-pause-button">  <audio id = "player4" > 
+                  <source src="Silicone - Prem Dhillon.mp3" type="audio/mpeg">
+                </audio>
+                  <div class = "audio-control">
+
+                      <!-- <button onclick = "document.getElementById('player').volume += 0.1"> <i class="fa-sharp fa-solid fa-circle-plus fa-lg"></i></button> -->
+                     <button onclick = "document.getElementById('player4').play()"> <i class="fa-solid fa-circle-play fa-lg"></i></button>
+                     <br> <button onclick = "document.getElementById('player4').pause()"> <i class="fa-sharp fa-solid fa-circle-pause fa-lg"></i></button>
+                    
+                     <!-- <button onclick = "document.getElementById('player').volume -= 0.1"> <i class="fa-solid fa-circle-minus fa-lg"></i></button> -->
+                  </div></div>
+              
+                 </div>
+            </div>
+          </section>
+          <!-- end of latest release songs section -->
+
+
+          <!-- this is the starting of popular artist section -->
+          <section id="popular_artist_container">
+              <h3>Popular artists</h3>
+
+              <!-- this is the main container of artist images -->
+            <div>
+            
+            <div> <a href = "artist.html"> <img src = "https://i.pinimg.com/736x/e8/d0/9d/e8d09dc7491d9801c8edb409a40186c7.jpg" alt = "arjit_singh"> </a> <br> arjit singh </div>
+            <div> <img src = "https://upload.wikimedia.org/wikipedia/commons/9/98/Nenje_Ezhu_at_Chennai_%28cropped%29.jpg" alt = "a_r_rahman"> <br> a r rahman </div>
+            <div> <img src = "https://www.gethucinema.com/wp-content/uploads/2021/12/AnirudhRavichander-57.jpg" alt = "anirudh"> <br> anirudh </div>
+            <div> <img src = "https://media.insider.in/image/upload/c_crop,g_custom/v1669033779/ds4bbdue5v8qcakdth4c.jpg" alt = "shreya_ghoshal"> <br> shreya ghosha </div>
+            <div> <img src = "https://wikibio.in/wp-content/uploads/2019/05/Badshah-image.jpg" alt = "badshah"> <br> badshah </div>
+            <div> <img src = "https://lh3.googleusercontent.com/fFEQDkLmuaBzUyXZAHIaQHUm78MRsN5oatXNscSJfE7e7IOFc3cVUqqgEoVo6mvYhp-3D4zd94nZZgY=w544-h544-p-l90-rj" alt = "vishal_shekhar"> <br> vishal shekhar  </div>
+
+            </div>
+          </section>
+          <!-- this is the end of popular artist section-->
+
+
+          <!-- this is starting of stations section -->
+          <section id="stations_container">
+
+
+            <div>
+
+              <div> <img src = "https://www.shutterstock.com/image-vector/vector-banner-music-radio-station-260nw-1456996712.jpg" class = "main-station-logo" alt = "stations"> </div>
+              <div> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjKxI9l--oqviAEGCnt6xzY9RRq99z8ow7-zr-KkOMDrE8TXUcjjfpGyJeHyC2W6ES8_s&usqp=CAU" alt = "love"> </div>
+              <div> <img src = "https://i1.sndcdn.com/avatars-000280601797-vz77uq-t240x240.jpg" alt = "retro"> </div>
+              <div> <img src = "https://yt3.googleusercontent.com/ytc/AL5GRJWJpiLYSWcYg1OErC6L4dMCTcBVJ-eQQcCq6lycbQ=s900-c-k-c0x00ffffff-no-rj" alt = "chill"> </div>
+              <div> <img src = "https://play-lh.googleusercontent.com/_zYCzFAKnQygvu7G05vNNHTHaHdL9iPXxIiVOVEEZbvIalnUiEK73j-kxtPR_jSd2xs" alt = "workout"> </div>
+              <div> <img src = "https://assets.change.org/photos/8/nc/eb/ekNCebtZEYdHARd-1600x900-noPad.jpg?1534079976" alt = "rock"> </div>
+              <div> <img src = "https://cdn-profiles.tunein.com/s249976/images/logod.png?t=637417549700000000" alt = "pop"> </div>
+              
+            
+            </div>
+          </section>
+          <!-- this is the ending of stations section -->
+
+
+          <!-- this is the starting of top 50 section -->
+
+          <!-- <section id="top_50">
+
+            <div>
+              
+              <div id="top50-image1">  <div > <p >Top 50 <br> Hindi Songs</p>  </div> </div>
+              <div id= "top50-image2"> <div > <p>Top 50 <br> Punjabi Songs</p></div>  </div>
+              <div id = "top50-image3"> <div > <p>Top 50 <br> International Songs</p></div>  </div>
+              
+            </div> -->
+
+              
+
+            <section id="top_50">
+
+                <div>
+
+                  <div> 
+                      <div id="top50-image1">   </div>
+                       <p class = "top-50-title">Top 50 <br> Hindi Songs</p> 
+                  </div>
+                  <div> 
+                      <div id= "top50-image2"></div>
+                      <p class = "top-50-title">Top 50 <br> Punjabi Songs</p>
+                      
+                  </div>
+                  <div> 
+                      <div id = "top50-image3">  </div>
+                      <p class = "top-50-title2">Top 50 <br> International Songs</p>
+                  </div>
+                  
+                 
+                  
+               
+                  
+                </div>
+    
+            
+       
+
+
+          </section>
+          <!-- this is the ending of top 50 section -->
+         
+
+          <!-- this is the starting of theme based songs playlist -->
+          
+          <!-- this is romantic songs based playlist section -->
+          <section class = "music-theme">
+            <h3>romance</h3>
+
+            <div> 
+
+              <div> <img src = "https://static.toiimg.com/photo/msid-92719841/92719841.jpg" alt = "">  <p>Fitoor <br> <span>07 July 2022 </span></p> </div>
+              <div> <img src = "https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/07/Raatan-Lambiyan-Lyrics-Shersaah.jpg" alt = ""><p>Raataan Lambiyan <br> <span>01 Sept 2021 </span></p>  </div>
+              <div> <img src = "https://i0.wp.com/lyricssilk.com/wp-content/uploads/2021/04/Baarish-Ki-Jaaye.jpg?fit=740%2C440&ssl=1" alt = ""><p>Baarish Ki Jaaye <br> <span>27 March 2021 </span></p>  </div>
+              <div> <img src = "https://www.pagalvvorld.com/wp-content/uploads/2022/04/Mehabooba-Malayalam-KGF-Chapter-2-mp3-image.jpg" alt = ""><p>Mehabooba <br> <span>14 April 2022 </span></p>  </div>
+              <div> <img src = "https://images.news18.com/ibnlive/uploads/2017/01/raees-1.jpg?impolicy=website&width=510&height=356" alt = ""><p>Zaalima <br> <span>13 Jan 2017 </span></p>  </div>
+              <div> <img src = "https://i.ytimg.com/vi/qHILe297r7o/maxresdefault.jpg" alt = ""><p>Filhaal <br> <span>6 July 2021 </span></p>  </div>
+
+
+            </div>
+
+          </section>
+
+          
+          <!-- this is 90s hits songs based playlist section -->
+          <section class = "music-theme">
+            <h3>90s hits</h3>
+            <div> 
+
+              <div> <img src = "https://i0.wp.com/karaokemusicfun.com/wp-content/uploads/2017/03/jite-hai-shaan-se.jpg?fit=372%2C370&ssl=1" alt = ""><p>Julie Julie <br> <span>20 July 1987 </span></p>  </div>
+              <div> <img src = "https://i.ytimg.com/vi/SjfisEOa7Yk/maxresdefault.jpg" alt = ""><p>Bijuria Bijuria <br> <span>16 Oct 1998 </span></p>  </div>
+              <div> <img src = "https://bajikaraoke.com/image/cache/catalog/karaoke/karaoke_2020/kumar_samu/aisi_deewangi_-500x500.png" alt = ""><p>Aisi Deewangi <br> <span>10 Dec 1998 </span></p>  </div>
+              <div> <img src = "https://c.saavncdn.com/730/Sifar-Hindi-1998-500x500.jpg" alt = ""><p>Teri Yaadein <br> <span>25 Feb 1997 </span></p>  </div>
+              <div> <img src = "https://www.geo.tv/assets/uploads/updates/2017-01-24/l_128554_065546_updates.jpg" alt = ""><p>Chaiyya Chaiyya <br> <span>14 June 1998 </span></p>  </div>
+              <div> <img src = "https://c.saavncdn.com/501/O-Sanam-Greatest-Hits-Lucky-Ali--Hindi-2020-20201119180920-500x500.jpg" alt = ""><p>O Sanam <br> <span>04 May 1996 </span></p>  </div>
+
+
+            </div>
+          </section>
+
+          <!-- this is bhakti songs based playlist section -->
+          <section class = "music-theme">
+            <h3>bhakti</h3>
+            <div> 
+
+              <div> <img src = "https://c.saavncdn.com/254/Radhe-Radhe-Hindi-2022-20220818204006-500x500.jpg" alt = ""><p>Raadhe <br> <span>12 Sept 2019 </span></p> </div>
+              <div> <img src = "https://m.media-amazon.com/images/I/71SWXjLXGwL._SL1000_.jpg" alt = ""><p>Hanuman Chalisa <br> <span>24 May 1992 </span></p> </div>
+              <div> <img src = "https://a10.gaanacdn.com/images/albums/84/6468084/crop_480x480_6468084.jpg" alt = ""><p>Murugwa Bolata <br> <span>25 Sept 2022 </span></p> </div>
+              <div> <img src = "https://bhojpuriplanet.net/siteuploads/thumb/c/25162_4_resize2x_250x250.webp" alt = ""><p>Prasadi <br> <span>26 July 2022 </span></p> </div>
+              <div> <img src = "https://a10.gaanacdn.com/images/albums/89/6493989/crop_480x480_6493989.jpg" alt = ""><p>Lalki faraak <br> <span>23 Sept 2021 </span></p> </div>
+              <div> <img src = "https://i.ytimg.com/vi/CN6RY5n0zfE/maxresdefault.jpg" alt = ""><p>Tere Dar <br> <span>08 July 2000</span></p> </div>
+
+
+            </div>
+          </section>
+          <!-- this is the ending of theme based songs playlist -->
+
+          
+
+         
+        </aside>
+
+        <!-- aside section 2 -->
+        <aside class = "aside section-2">
+       
+          <div class = "aside2-heading">
+         <h1>Queue</h1>
+
+         <h4> <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a> </h4>
+          </div>
+          <div class="queue-options" id="queue-option-box">
+            <p><a href style="color:#007bff; font-weight:bolder;">Playlist</a></p>
+            <hr>
+            <p><a href style="color:#007bff; font-weight:bolder;">Favourite songs</a></p>
+            <hr>
+            <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+        </div>
+
+        <!-- playlist -->
+         <div class = "playlist"> 
+
+           <!-- song no 01 -->
+          <!-- first playlist item -->
+          <div class=playlist-item>
+              <div class="left-content">
+                  <!-- index -->
+                  <div style="margin-right:4px; color: grey;">
+                      01
+                  </div>
+                  <div  >
+                      <!-- coverer class is for those items which when hovered will show an effect -->
+                      <!-- in this effect, when the user hovers on the item, it will show black background -->
+                      <!-- with opacity value less than 1 and a play button icon at the center -->
+                      <img src="https://i0.wp.com/www.vocalnewsshahdol.com/wp-content/uploads/2022/12/20221222_144526.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                      <!-- <div class="play-button">
+                          <i class="fas fa-play" aria-hidden="true"></i>
+                      </div> -->
+                  </div>
+                  <!-- name and author of the song -->
+                  <div>
+                      <div style = "color: white;">
+                          Jhoome Jo Pathaan
+                      </div>
+                      <p style = "color: grey;" >
+                          Arjit Singh
+                      </p>
+                  </div>
+              </div>
+              <!-- like button -->
+              <div class="right-content">
+                  <i class="far fa-heart"></i>
+              </div>
+          </div>
+
+          <!-- song2 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    02
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://images.hungama.com/c/1/3a5/eb9/102154537/102154537_300x300.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Let's Dance Chotu Motu
+                    </div>
+                    <p style = "color: grey;" >
+                        Salman Khan
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song2 end -->
+
+
+
+          <!-- song3 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    03
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://static.toiimg.com/photo/49966566.cms" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                       Gerua
+                    </div>
+                    <p style = "color: grey;" >
+                        Arjit Singh
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song3 end -->
+
+
+
+          <!-- song4 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    04
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Raanjhanaa_%28Original_Motion_Picture_Soundtrack%29.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        RaanJhanaa
+                    </div>
+                    <p style = "color: grey;" >
+                        Jaswindar Singh
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song4 end -->
+
+
+
+          <!-- song5 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    05
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQUExYUFBMWFxYYGRkZGRkZGBkaGBYZGCEZGBgXGRgZISoiGRsnHhgeIzMkKSstMDAwGSI2OzYvOiovMC0BCwsLDw4PHBERGy8nIigvMjExLy8vLy8vMS8vLy8vMS8vLy8vLy8xLy8vLy8vLy8vLy8vLy84Ly8vLy84Ly8vL//AABEIAK0BIwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYHAQj/xABBEAACAQIEBAQDBQcDAgYDAAABAhEAAwQSITEFQVFhBhMicTKBkQcjQqGxFDNSYoLB8HLR4ZLxFSRzorLCNENT/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QALxEAAgIBAwIFBAEDBQAAAAAAAAECEQMSITEEQRMiUWGRcYHR8PEUM7EFIzLB4f/aAAwDAQACEQMRAD8A7UKZkOYk9gP1P+dqlXesV9qL2GwxW5iTbdZdLasJuPHoVk3YT7RvyoaqQ+PHrmo+vtZqsUpJtjb1k++UNG3eD8qmdgiEnQKCfkKB+AWutgbJvTmIMZviKychPfLHyq54huFbXp+IkR7J6z+S0ydoWePRNq7p0E10gc/8mpQKBZndHuZhmvRbtBSfQh3P+oetz2UDlRiykARtEAcoG35VhUyWvaaDXtAx7Smmk15NYIOvu2cAAeYxIWYi3bEZ3+Zj3JUcjE2Is5/R+D8f838nsefbTmYtRrPOor8nQTruRyH+5og4A91/NvOg/dKB5rnRSFmLKk6ETmLnp6eehPDtn9UQv4Adz/NHLsOn5MtWQ3pgZFOo5Fhy/wBK6D3HarD3gCBO/wBSegogiq5I8dbVkYPGSDmnaBvPasR9mnxXlj8KfkWjStVx/CveUWVYqra3WG4Rdco7sQB7Zu1YLwjxoYfzjlLs+RbaD8TS2hPICahNXOKXudOP+3N/Q6gpr2oLIKqWY+owSOQMAEL2mpbZkSauc6Z7Sih3FOK+SyLlnNqewGmneTV+zdDKrDZgCPY6igFo8uDShuIFELtwTl5xPsO9ZjxrxHyMNcYGGYZE65nkSO4Et8qIDlfiriHn4m44PpByJ/pXQEe5lvnQK8sgg1YaoXpBgfds6xGlU8TbjlpRa5Q+7ams90AGvUL1Zv2oNQMKwSJqiapmWonrGImFNNSusb1ERWQBlKvTXlEwqVKlWMKlSpVjH2zeuZSoiSxyjtoWk9vTWffwxadzeexYe4WzSzO4nnAaQNeQEVpCgJBI1G3adNPlSywIHLahswqTXDojwZYr6ssz+GY00595oD4jtG8LpUmLNtjps1xhMTzyqsx/OKPStu3qYVFkk8go1J+lB/JZrNxVzK95WuNnibedYCHLsYAWOUHUxrhd7Qzw3eLqv8oEds+rH30j5960DGBNYzwBiNXVjrAie06fnWi4/edbP3UeYz20TNtLOoJIG4Ak+wrJ2NLZss2bslj+FfT2JGrEfMx7qaWGxyOJB+RBBHuDQrH31tWIVixGgk/vHY7nsWMmO9Zp8VmDG9dKBBLtsuUaknoOgp62J27OiCmuQBJ0AqhwR1a0jI4dWUMGDZgQdiDzrCfax4quWYw1olSy5mYfEQdAo6A8+sEUo/JqL3jfArviEnXTnoSPlsd6H8P+0LCXbhtNcySSFYghW1IHqPwyIOumsTXFLWAvMSwB7DsefvS4hwq5aRXbTt0rakHSz6YtKoUBdo01nT+9IqBqAMx0n+09K5b9kHiG491sPdbMPLLWyTJXKRNsH+GDIHY103HswQ5IzkEKTsD1I5xR5FbpFe058q40z+8M9YzdNhpAHaue+CuFrduDNMWyrmDoY/CfcgfQ1uuM28mHdEbIqWzLc9Boo7n+9ZjwJdS3bvufi0A05AEnX3NSk/8AdjXuXh/YlfsbTE3pdbY3Prbsg/3MD69KsswAkmAPyArEcM8QEtfvTIZxl3gWwIQRynVvnVHH8ba6wRWIDEl45IOXzP5VfTTpnIskWrQe4nh84S+5IzuBH8Ns/u/nIDe7kVd8JcQ82xO2R3T5JEfkaEX8Vnw90M3qC5l/o9Q/Sqf2bY/OlyyTuc//AFatSSfmotHeJtbKyCx3b8gPhH01+Zrln2o8SzXlsA6WhLf631j5LH/Ua6nxDFpatvccwqKWPsNfrXAOIYprtx7r/E7Fj2kzHsNvlRYEii1QXGq9h8HcutltoWPbkOpJ0A7mmHgNwtlW/hs50C+euaemmk/OpPJBbNjqLatIHNUFw1LxDDXsO/l3rZRjqJiCOqkaEe1VEaTTxkpK07QrT4IMSs1X8uD1q/dWahIo0AoXk5RTLdqCauOahc1qCiC6oO9VrydKtNUD1jFUrXlaDC+F77otxzas22+Br1xbefuqn1MO8RU/EPBOKt2vOUW71qJz2XFwAczA1gcyBpzpHlgnTaDpfoZelSpU4oqVKlWMfcVeCvAdJpIdKBiDGYcOpUkgGJjcgEEjXkYg9iaZcUIHc8szfluep0+lW6zfGcXey38wRbarAgyzZiFBPTesbuZXwnZL4hkLEDKzAjf0lf7E1f4tx+5nJGhsSCrAHOxKidNI8vNB/mNCuA4hbd53ecvlvPOREkflQ/AsRcABkxGp0dG7neBI+fakUmimhNmhtXUuM7mRmjKd/TAiOm9RcRuW0wly3cRmGIMDLGeNCgBPZc2xgGoMObZUJrK7Tp6ZGYdJiSK8wmOJe4zsAqgQT8IP4j9efencrpGUEFvC/ELWFsLZUOUBJBZgSM5zESAPTJ6czWF+0O55121iVUAC4lt1nUuSzCdJKlV3gRFE795ZfKylDBEbeowfl8X1rJ+JcYyiU5lZB1BKsGG/MMkzykVPU+GbTTCGHXEX7DkELlYAZZQEGTl3kRpz51MOEObJW4IkaA9eo9Rqr/4xqmQuqkT5dsEA7SSRzM676CieCxrMMrIya/CxBIB9ia17FaMr4P4kcNirV3KzlGMqnxMIIYD5TpX0Zhriuq3BPqAOu4B5EciOdfPHGMKgxFu3lYLcYkNbE3JJgKBoPiIO/Ou8Wrnk4dFUQVVQFJBbQAaldC3WKeD2ITVMqeNLq+QybltRr/B6p7xFc4t4lghtgsEYy5GnpXeO52rX+L7RYZ3IOS22RQfhJjOx68qxbXWW2SFkQSxJ+Eacu9DTeeK9hnJf00r9Qgl/MhtqTJOmn4UHpXSnWcOLSKwYyxkg7T2oOjFj5iSoXKNObGJ+f/FFXsu15bW2aDqZyjmfoCa780fQ8vC2+Sh4l4/5YDMubOSgEwMqgeZoNyS6gf6Wq14O41bAa6hysfSf5Z1Om3L9alxvD0y+WQGUTqR8ROpPaq+G4aoQpaVUBlj8tz+lcf8AykdzuEPqT+LfEmay4JYG8y+jkqW92/1McvynvWLFwGvON4nzLx9QOX0jvHP6zVfDqc0ASdgBqTO0DnRkCMrZpeP2Xs4SwttT5dwBrhH43YAqrHpvA7dqh8WcOt4XDWreVDeun1uyhmhQCwtz8IkqNNSPequBS42Is2HLem4oyMT6IOZoB0GgNa7FYsvxK1ZUgqll2uCAT6oyw26sDkOh2NeNllLFNRu0rk67+lnfGKmm+OEvb1AH2gCMFhluf/kDyz/MIQi4T2zR8wOlYbhvDsRdlrVm5cVT6iqkgdRPM9t60OL4O13iJw+d3BuQzsSzhAMx1PMLp7x7UU445fiGGwdj0W7DWyEWQARF12MbwnP3/iq2LJ4MVBO205N9kuRZR1Ntqu33MVetuEW4VYIxIViIViN8pO8dqV/h95cma1cHmGEBRgXiPhBEtuNutbnxaP2nieGw0SiBSwHIMfMcHoCiKPnRXH8Qz8TtWbQ9aJN1yAfLtj1m2gOxeUDN0Kgc6b+ulSdcpt+y7G8BW9+6RyjiGFu2XyXbbI0A5WEGDsfb/anDg+INrzhh7vlfx5DlIPMdR32rfYzCpjuMFGGa1h7YDiPSxUyEP9dzUcwhFeeG8TdxPF71wlslgXEAn0qoPlosdyC3uO1F9Y1HVStK39+F9WBYVqq+9L8nM8XYe2xR1ZGESrCCJAYSDqNCD86N/Z7w23iMbbS6AUUNcKnZymyxzEmSOYU1R8S4k3MTfunZr1yDyhTAE9QuX6ihlm+1tg6OyMNmUlWE6aEaiupqU8bp02vhsimoyvlWbLDcBvY/id5MUWXyyWudVSfu7dvkAQRB6SdeZjwhxO3a4rewthMlg50C5maXtTN31EwSFYaco6Uvspui3ZxeLvOcuZczsSSfLDM2p1JOcD3ig32XWWv8RfEEaIty4x5BrkqBP9ZPyNeflbkssXxFJL0ur/ydEaTi1y3f2BXj7g4tY97VpNHKsiKCTNwAlVA/mmAO1B+J8DxGHCm9ZuWw2xZSAe09e1dVwjC+cfxC0yhxms2HYgLbW2ihroY7TmzTvA7xWM8Q8YRsHawNgteFom5du5WgmXJyhhmyA3D6jGw610dPmm1GNXVJ/FiZIJXL14+TFUqVKu05z7hNUcO0ZAoJD53JJ2k5v1YD2FWrw9JHXT66VGhAmPwiP7x+lbsAcL4mDpJIHeKzPjK+gt+kEs4nMD6YUj5EzQ77QeJCz5AuIzW2W9JBgG4ywqn2kmOfyoOeKlra2QuW0lu1kkQ3wIfpJP5UObDw0UrF/K089vrpTMO0ZDCwcwX+Q817AxPyPSrWCwYc6mNRT+JeH3X1KcybwNweoqai2Vm6aG3cNk9U/T61HaxCsGDK7G56RA0gGW16yB/hoXib91VCkkhtAY5jl70UwWFS5aGZYZYA9AOadAIIPqk6R1oRfm08DbVYKxlhVVhba67GFKtBYFTooCgE6SZ51neM4K8VOazdGoMm24GsTqR1X862nCBbAZrauzFioVFOYZfizSywJ01YfD8qOYPHOIDoV5rKlSOoPrYEHqG00kDSW8O3YksnZHNeGYXKRDKwB+AmMp6Sxj6xy3opi+IOrKl2y9o7CVK5v9M6Ee1bvi/D7eIUg20LxKMRv1GbcTsfftWG4lwo27YuPcvFV9NvKC4WdYJMAJq2jBSNYFPoQqmxYpLXmWTdDKoFwZgCShOQhjBBjTkZ6a10W/i7Urat3s4QAZl9WoECSNJ5/OuaJiZuWZko5yQRHxjQGepEfMaUeu+HECjyyJAJUMCwKxIRGDArrpEkCdOUNFbbCzdst8XZ3RmZiDmyhTIOSZ1B6xP0oFjB90Ap1aZ9hrRvh+IW9bCMGLLyzS3QgE6kCZE9KlucPsQFYuR8hvEqfyoQTXULI+KDNp9O8a5bM3wfDm8mWSrOwjQ5F0JBMbT9K0VrBjDxLZny5QeQHMjuamuX7S2/KtDKoE956k86HYnG5xJO0+4KyGH+dqtlyOSZPHCMXt6keMxWY5RuaAcXvraFwljmAIHq5nYf3PtV+1eZTnUTOmo1A6if80rN+LzazLbteZ6RLm5Esx2gDlH60mKPlbZsrbexnVuk86KcB4o2HvpejNEgg6ZlIIMHkdd6o+WImI5UikRrWyQjKLjLhoXFcd12NOviPD279zEWbN03nzEeay+XbLfEVC6tPcjQmh/h/wARPZxTYi5muZ1ZX1GY5iGzDlIKjTaOlCSRvRq/w6zhkVsSGe665hYVsmRTMNdeCRMbDX+3FPFigtLTdqvdpf8AR0xnNu7qt/Ys4vxcExHm4ewEDPnvFjNy8Nik6i2vOF5gE7RS4l43tm+t2xh8hzIbrtl8y6qEHy5E5V0Gs6wJ0EGXD4KxNkYnBCyt9sltlvXPNBMBWa2xJyywEmIkaUD8W8AOEv8AlhiyMuZGMTEkENGkgj8xUIQ6dzUdLutrfK+3NFZSyKN3tfwG8V4+QYlLtvD5UP74+nzroClUQmYVVMGJ1gdIqhwrxetviF7FNaYrdUrlUgsg+7jUwD+7Gmm/bXLsteWxzq66TElWnlaeewnjSbu+9m24Z4ub9rH7PhgLdx3LWlP3l1n9RuM5/EImPhUZvcanA8Xt27WKxY8nIu62tmuKJOa9AF24xdRIBA2BOprl3B8Ytp2LqzI9u5abIQHC3BlJQnTMO+m451LxvjyvZt4XDo1vD2zmIdgbl1zJLXCum5JAHboIhn6OM2klXFv2W/8A4UjmcVbfqC+L8VN7IoRbdq3It21mFzQWJY6u7QJY7wNqKeCfEGHwjXXv2DdZgvlkBTkicw9W0yNRrpWaeomNdrxqUdD4OdSalqOi47x1gsTa8rEYS6oBLAWnGXN/FuoJ9wazmM8TKll8Pg7Rs2nP3jM2e7dERlZoAVY/CB111M5tqK4bw7iHstiVt/cqCS5ZQNNCACZYzpoN6nHBixL2vht1f3HeSU/4DvgbxomEt3LF60blm4S0LBIJAVgVbRlIA07d6p8c8RWij2sHhxYtPHmGS1y6BBCliTlQHXKDyFQcN8JX7uGfFKUW0meSxIJCCSVEajlvvWdowxYnkc48993Xx6gcpaVF8djylSpVcmfXeI8VW0vvbcEKg1O+oknQco1rN47xNfvlEwpULcuOSxEkqWypHQEaz7UMt2GGZryElg6nMdyQNT10oeOJJgkV1G2UBebFJKj608nGDp8jwwynDXdIv+PcXcuKbV0qcrAgAbNy/wDbP1ohd4fbL4pGuktbtW8nL8Hp057D61zPG8fvX7pbdneYVZzO2gCjcnkK33A72KEtfsKxIy6+V5jDaJQlh7H8qFrdiRTaoqYHFlSyt+Ej89qPYbHkDQyKCcTtBiptrIYwTzGTUhhyI2qexYZQGZlRCTJJ0A1P1gHTsa0opLVHgfUrUZcstce8trLOSEyqzMYJ+EZp07gD+rvWc4XxAow9ZIBBHTTYzVnAcPu47W55v7NlIU21AWSdGhoLHSSQCYgSdZBcQ4RfwhyXAHt6lLqSViT6WG6H+U7a7xNc+SMmtVFE4p6LOgW/Etvzbdtjl80GG6XFgwY3DA/+09afxhNCklc4JQ//AMnXTMjdp1XmCR1rj/FcUSAQ0ldVg7Eagiui8f4nltW1J9ZyiP4n0Ue2/wCtPjncdyeSFPYveHsQz27btIaIaIIDL/uNf+9WTdNu66kBkcyR0J1OneZ+faszw/hJJzs7qWj0o7KDG0xvRTCMVAs3GZ7ilgGInMhZihLHQwhUHWZU/OqJnnF+B2pGaVtk6MJ+6LbN3AOvYa8qLYC05TO8QSyvB0S8hIuEfyvGcfM/ipmMTNbhR6pygZS2olvgBE1Bwu1iELm7bAt3RDR6VV1AClkIGQEADNJ1VRpztGNonJ7lfiGHFu4GQgZjp789eX/IqjxfGXA7FyCdkjQEELl/OZ9jRG1iHdCjAZkYq0xqykr8sywf6hQzjmFLrbY5pTTTmG2nuPUPmTUXsOgRd4kykhYMExPTSR9QaZwrGTcZW0DkEdiRlb9BRfAABgnlBVPM9upNUuLWLZzhLYkiEYaZT/FA3pFGT3b2M5JOqLmItHKrN0YkgwAF7e1YDFkuzOZ9RJ+XL8q0/GMcws5WOrenvlHxH9B86zDvqOldGSlVehOFyVd02MW2aTIBUsaaVVuTNSY6jT3H4W8FuKzAEKwYg8wpBI+da/EXMNi+JWGtF3DEG5mWF+7XMoUHXULBnTpMmhHhXw+MXcZXcoqqGMAZmkx6Z0Hvryon4DwgS7cxV37u1aQrmbQZm0O+5ABHuwFed1UoeZxb1JV88HThT2TWzf8AgLcZwq3+JorP+5t23W2BreYF7hUMSFX8JMnUexIzXG2v8Qxnli0bbLKBGP7tQZZnYe+402Anmc4NhL13inn3EKgobyjpbdTatK3Ro3HY0Z4Fird3FY25aILDykBnQ5VIzDsXETzyiuLxPBqlbUVv2Tbp/k6pR17cW/kxlrwnYvXnw1nEOb1oS7sg8owyrcCgHNmUtzMGCO9AeKcOC4l8NYLXCLgtqTEs+inYaDPI9hW++zvhDYd73nQMQVUlMwYohJgsykiXYTEnQA86z2C4LfRcQVUNjAjOwBBOHR5JgrM4i4MwVRssmZIrqx9RLxJRcrSSq63b7/Qk8eydVd/wVPGfhcYNbJV2ueZmDMQAoYZSAoGuoJOpO1VOF+Gw2HbF4l2tWF0GVQ12605ctsHQerST35CaLcd4i/8A4VZsXlIvlgUUiHW1bnI7A6r/AACdxr1rQeNOCXL2FwtuxkFlIZmLBURAgC3Gk6qAWJjrWXUTjGMZ8ttX7L88GcIttxXZbfUyOP8ACFlcG+NW8/klFNlGVRcLsQkXCPTAM/CNR05swHgUvglxJdvMuGLVv0qsT8budlCqzHaAN62HivhJu8PwtqwwWwvlu1xyFCWwhy3HB1PxTHWKi8eXClnBYK05W3eKWmYaEonloB2nOCR2qUOqyS0xT3cn9kuz9wvFFW2uEvlmY8QeB7OHwtm8MTmNy4iloAtlbgJzJzgATJOo6VrfFeEwuF4aMK95lUqfLhTmuukvBABCguQTP1qXxtw1rt3CWzlt4W2ys7MQFLZgiWlG5aBA5Q5J2qh9pnArmIv2nd1tYW2n3lxmACMWOaF3ZiAoAA1NTjkeV49cu7fxwuOR3HSpaV6L8mY4p4dOH4Yl18Rdm6bZWyJFoFvX6hJzHKJ2GsVha7P9qHCWupaJdbWHsrcLMSPihQiKm7MYgR1NcYr0ejyvJj1Plt/Y5s0NMqR5SpUq6iJ21uNs4gsWMdOgArD+IeLG7cGugEAch/z/ALVqOLYh7QYWnAJWDA37T7TWNs4TKMzak7D/ADl/nvPxPFk5JUjolOscYfvJWtZtCJAERqQZHcc+4rpfAOJW2yi2MKJElc91bqn+HOwJaP4swmudXLhY9AOlHfC+BD3VDD0mBPIRrHudqLkoxbZOPNHTL14nKjTBEiSrEHb4l3HvWYxdlr2KS1cM2bZBKyCsmQ4MaSIykcpPIiSuLwbW7hYSLTGYH4TpMD+EE+2sUVwlmw0nLGfdgACdtSeun11rY56nTe1ha0pyS3oNNjsggQAoMAQNpiOmlBcXd8xhpAUtIOp1B0YbSSZ7gVdxGEMICQYAIYcpkkEdNCJ5UKvN6tfi10+k6e/WZ0rryJODOaG00YvxDwxHY5Vyzvl0B+W01J4kcvjrRVptm2Lmm2hZSfcEiimOXc0F4DbD37rHYKF+pB/tXFHmjryJVZqcC8gECSP+BRG5qQfYfUjnzqHB4YE5WBkCVIO42II+dX/2eVkGYjSOhE/Oug5yDFYQXWKO1y2FYvmQka6DcGSPUR3Jin2eFLbY5bt5i4IClvxDQzOjQRoOZFB+IcSuDEMit/8ArUf1asG9xp86dw3ixZvLvAgTof4GXSD1EAA90muiEXpJS3Ze4gqpiM6sSt9Q400DIFQtI01GSB/IabhiWzq6gMJgjY9DHLl9aM3/ALxWtshVgme3qIO4P/STM7Q4FBNVNu4DJygN3I5kCozjTGi9ipi7wCAzM6/9qFPdUnQVFxbFHDYjIy/+XvMWQ/wFj6gOwJmOQYdKt45lt22foNO52A+tJLyyvsOnsZXjuMz3dgAoy6czuT7zp8qH5aezdRXoJ5ChKbk7Nt2PAJrwpThZY9qV62QNKWmHSzzD4p7bBrbMrDmpIP1HKpOIYy/djzbrvGwZiQPYbA1Ws3TsasZv+9DRG9VbjW1tYxuK4kp5RvXfLiMuZoj+HuO21VsDfu2mz2rjWmiJUkEjoY5VPdcVGi5hNBY4cVybU73YsJjrtt2uJeuB2kFwzZmnfMZk7UPTiN+xcNy1duIzfEysfVz9XU89anu6TVR3mmeOPFI2rfYffuM5LuzMzalmJZie5Opp93iN42hZN64bQ2t5jk6xHSeW1VS9MLVnFbbcB1MlxHEbzWhaa9cNpfhtljkH9P6dOUVVxXEb10jzbtxynwlmY5dvhn4dht0r1xVQrJk0NMV2A2y3xPjF++Qb165cy7Z2Jj2HXvXnEONX7wVb165cVfhDsWA5TB5996gNodar3Fg0VGO1LgFsuY7it68EW7duXAghQzEhR2B/WqApUqKSSpAbsVKlSrGOj8b4gXaEEKOYGg65Sdz3oPcuzPbT/gf5rRXjSeT91BBHxdfY0Ka2QoaNCaSMVFUh92yBBrPWtp4MYZTbyzmIHcmRljprFY3vW48G2fKtPiDEoITNOUO+gJA5KJPX4a0tluUWOSpknibiYuXhbtibduEzCSxOYnSOsZjpzrR3UyAXbc+W26ndG0ke0nT3HameAODW7+e+wBCXHVOXmEBVa5G/4QPcmtVxvh9sr6yFB5zEkfD89TTY8S0i5cnmpcIB4biMiJj/AHqnibJzBhBABnXWNxp0En60EuYh7bZXBBgQf1B7g/URV61jJG9LrlG4sKjF+ZFXizAITQfwZfD3LyhdRBJn4tWGg5cqm8S4rJaJ6DT+w+sUE+zu7GJZTztE/MMkfkTQirdmyPajpuBu5gNII0q1cLaAbGmWrsxK1Licq221iJZeoIBJH5GrnMZ3C3CbhuZMwZiA2aNB6QdNh6QfmaNcTs21cNk3CNIIA1JBWdTzdj70F4Zj2FlgY9ImB+HQPA9jI+VLE38SVtkMADmUDcS8QPeCfauutkTT3NNa4nBzMP3YZlEalI+8Sd9lkd1HI0Pxa5S0EMA2kayG9SH/AKSD86df81cue6zeapHl5AGIYa9xvv1rM4XiZwxs3bgPksiYa8WibOIsyqtpsrWlUmOQBO2sciSVjQvuXfEnDRisKQB96mqRzZZCj+r4fmDyrJ47jHnWLSzrEv7jQfXU/SujXbYUk6ZWMzOgneTy61y3FW1a7fuLoLjlwOQnlHKd/nUJNJbjrkpvdr1MSd9hU/nqoURM1VxFks0L79hQhlg3pqvcZ2txYnFMNjUD4lj1q3+z+iGGoqmhzCKvCWNxurFuQxX1qdrpB6iosTYKidYp9hpFJPTJXEO/cY7zVqyVy7gV4QKoYhdaRMKI8Y3qgbdarGpWNRmsZDDXlPYUyaJhrAVA9XClVsToKDCV2eonNPJpEUAEVKkaVYwqVKlWMdw8TeF3uHzyVLM8kMYXKN9f7DvQXxIim1bVbYXIxBI55uXtoK1eILX2JJmOZ2HsOdBvEVpQqqN5ntA0k/PlXFgzyyZ0ktmdHTJynFGJNqK2PEcScPhcLhyqjOq3rrN+Ek5lEDWcunegWAwXnXrdrUi46rp0J9R+kmrPj/Hq+KvgQfWqqY+FbQylfrMf6q9LqIpJI7Orko0jpfhnxRgreHt2hntKiCPMWC8CS3pJ9THWDBk1WOPN1i9xw0MfLCiMqkgQBvqAN9a44EzTt8zV3gmKS3iLL3M3lqwLZTroDlMDeGg/Klp9zyrW51PxNhUcjXQGTpDDn/x/2rPtgiAWX0ELmymYMbietE8XxK3etM9pxcWI9OsbaEaw2vY1n8Zdd7beX8QXXcmOlDNFOX2GxN6WZ7xXjy2VP6mHQDYH31PyFLwAs4lv/Rf/AOVrSaB466WZtDM6k7kjSiXhnigwzO5WSyhRrA3BMnXpSRVIaTs6xg+k/wCdPyq/dsDIcwkEQe6nQ/kTXMT4+dTIsoV7O3btp9KMN9oVu7h7iqGtXwuZA0MjEEHLI7TppTqSJuLDCAg6MEDqS3pAYalisdxcFWsLhme0yr6RuWPxanKYnbftvXOF8SYltfPKkmYCqBOmwI5QPpVvAeNsTZMOfOQn1A5dR81ImutzVWRp8HSLNxTkCZnZWIVtCMuYn1f7+9DOKcLzWsTbuKQLglei3UzgMSR6iDk23B70P4X9pGGCZbi3k6ZLaaHTXR4IOvIbd6KNx/DYtLjJiMgXISbq+XoSyqBLepiQdu2m1K5RlsGpJmKwPicphGsXMweAiGDLI3L3A0+a9KAXMS5Yqo2G3+9aTxVdVsQFWCtoZQQI13MA7QIHyNCrigQRoWNcWStelcFY21bBD23XLPPSrzAoDrVu8okA1FfsAgg0XjTCm2V7+N9EjehVhirDWaKDBApGxqhh8PBOY6zFLGGhewZF23fzSDG1VMGTLT/gpxsgGlZb1j6UIbXQJOywW0qleBNeo8EjoT/xXpuyaqlaBZWa3NepaPSiNq0OleX4GlDuawdcWoCoqd2qFjTDWPFwbVTxu4FK4dahd5pTMic01Wpzio6wD015SpVjCpUqVYx9K3wqpoMqINT1P9yTWR4rnuGckAERPIDWPrWzx5S5bZG9J1gz8IXn71gsXcuScrHc0n+n9LLHJznyz0OgSlbXKCXgTA/+cDtEWkd9BAmAm/8AWfpWM42wuYhrgUAFnbTbVjHz3megrb+ELzocSzktGHc5fYjQRt/xWIxqgPcKgAM5IyyFCjQdd9TFdebeaQnXNqTv2RRvqpHwgHsY/Sq4JB2/M1NdY84+VQ5tanJHnoL+EsQFxVokkAtlJBg6ggBo3EkaV0G7hlw9jEuI1RiDzkg/3rmfBjF1W0kEHtPL/O1ajxHxOcPkJIZmEr23P6UItFY2kY1MOSCVEgGKrss0b4DabKIgSTuYMydxUvEeGzr6Z7aT+dV8K4pkPFqVMA2SARIkSJE7jmKh8sg67g1fFkjcUr9kZjHPX6gH+9RcWV1ofY02J/z/ACKtNazDvUFpdKu2UIiuvGttzmm9wc2HE/5P0qcELbkj4S0ex1/Wpcems/59aDYzEmAAdP8AP7k1OVRlwPG5RDnDcS1wMWMmdSdyTux96dxP4dN5BH1oLwrFZXB1g6H58/lWjxKSDUpx9BkyhbclzJ2qS1dkkVDgrcIx5yaZhQQx760qZVNF1zFDuILBkczNW7x0qvxFhC0MnAWVrraVBh2BUyadcmKq2GqcUhCaxczTXiH1EdKit6Gm+bDE1ZPZAoPYTaqPEHg67moLfECBoa8vPmgnWh9BkrK7UypXWomWsEr4htarzVm6IquwmlMNeo6e4plYAqVKlWMKlSpVjHf+I4oNmVTsAXPJRuR71mLnESJ0Bk1c4wkLlQkliWeNT2GnzrN3Xg+1ehCKij3enxRxwpGo8N3TkxTvIQW1Viv8xMqJ5mKx+MaWImQNPpptXQcZhlw/Dbaic94o7jQSdLpE84VQvy965zcOtc82pTbR4/WZNeR1x+Ctd3NQoCTprT7hq7wbRi+kopYDq2yx8zPyqb3ZzcIOeGuFg3riMPVbA071D48fJ5YAIMMe4IgULwmPui49xXIYnUjnXnF71zEwWaSoIHcGh22HUtqYY8PlBbXO2sTzM9zRDGvaIOvL2/MxQfBN8PsKv34CnpHLSur0OUAXG9UQR7wR+tR3hGo2mJjmIp+Ul4G86a15i8O1v0t1kHkZ6H51Gct6ZaC2FamDFWbO0kz86qWmG3arFk1bGyc0O4wfuxrvp/f+351k3uAk1ofEV2LS9zH5GsuTUMz85bEvIXbR+dazC3s1pTziD7jQ1jcPc5VoeC3vSy/Mfof0rcxF4ZPrr0qFbwEGpLTyG7Eiqlp5QdiRUuA3uT3McNgNap37hn2IIqK4fWK8xb6gj2pW75HtklxzFQlcutOxPwzSuD01TSlwKmQ+YDUVyrfBuHtfu5FIUBXd3actu3bBZ7jRrAA2GpJA51pOF+CRiUBt3biO1trqLetKovWUYLcuWxbuOwyzIBHr1ynQwt7Dg7B+Erjj1XFRh5WZSrHy/wBoIWz5zAQhcsCFGZgDJAg1R4jhWs3Gs3ID22ZGE/iQlWg8xI3roPBOOYe2y2L+LtXXe+9xr/oKJbsWXs4QlxKq5cK43ywA2p194Fat27aXGuo5OHxF17ly1dYXsSSWt3brNbJ8pSAyNuzHMBJNDUlyNE5ozDrURYciK6bb4rw8obJdfLW1gMPIt3DcvIH87Ewqr8ZaF5RLEE6VV+1O0LNqzaa4PMa7fvi35ZUraZslhQDHlW1tqwCxMsdBqaNgOZYncVXYVaujeoWoGI3NR1ITUdYAqVKlWMKlSpVjHbvEtg5h5JKjXOV57QCRtoSaCfsJGrNt1rt+PUOHRpKtIInlXJ/FPDRauXFVjAg/XlXXhyXsep0fUXWN8+pb48XvYbB2lKybdxhLQB5aaEk6D7sNvz6Vj7nh/ExItE65YBWQ2c2ssEyfUNxIAI1rU5fMwunpazZMMNSRlyMvYEMZrK3eKYgH980qZB00JbPP/UoNSkmpNM87qopTf73I8R4axAUH7szkOl1NnttenMxCkBEYkgkaHUjWnYbw/iZRPKyl/Lgl0CnzSVU6Ez8LSBJAUmNKp4vjN9gytdJDLlIhYiGtwBHp9BK6RoSKkPiXFSPv2kRBhZGUlgRpoZdtdzmMzJpN0yND24Tetqpe3kz3PLElT69ipAJIIOh00II3FX14J5VlnvMbbycnwslwABsunqRiCGE7gjQTNDTxm+yhTdYiQ2oUnMAVBJIkkAnfqTuZp2M4jcuoq3GLQSZO8mE/+KKPlTJAZLw/XnFEsRGSee2+9B8M0R3FFA02zNdJBoD4P4mJ0PKrXEL5YepiYGggRM6n6VQn1Gm3XNc84b3Z0Rm0qXoMtab1LZJJqONK9sGCKaL3oR8WT4vDi+GtndQpB6MZ/t+prI3AQYOhGh9xuPrWt4IZzsdyR/8AY/3rL8REXrn+tv1NTy82Ux8UMtH60Y4Pdhx3Ef586BIaIYO6ZB6VoO9gTXcM2D8Y7mqGEcw/Zv1q9b+JxVOwvque9TkAatss5jpUF4aCinDzDN7UOvbfM0rlaSGSPb2qUxHJWnrqvyqO2dKpe5kFPCuGvtdf9nv2sOy2nLXLtxbaeW0KyywMzmGkd9K2mK4yuFxTX2ZWGHwhweFVWRmvsCyI+VGMWlBYlmiQFjVoHM2FesNaUY6Hxq9ZsJYRfIuYUGxeVUuI9xvLUq6raXVDLO9x7kZvSukZafwKzl/ZXt637oxOJl/iulQUtJccaqmRiYAgkcpkYTBY9rLFlCnNbZGDCQyOIZTBB16gg1aXxLfGgKAsGthggDW0gKbdsj4EhduUkgySTz5oOWy/di2OSW7L+A4Flm4bzW7lm0MUSiArbj1W0kn94SAdoG2tLivD7+KC37t83cTcupauq8Dyi6k2gYAgZQSYEDURIaoB4lxAzQyaoLbTbQ5gIh2kepxyJkDWBrVK/wAcvZ0OYAoVYFVC5mUZQzx8bZdJPInqaZRy+wzUQnZ8KW3Vcl1yXxIwykqoDxq95dZCAAgDUyBryBHhfhGwL9kl3uK2IvAD0lWtYcEszabZwFPIzpyJBW/FuKWQtxRlfzBFtPSzQCF09K84G+szJqphvEuJti2qXYCMzKMibvJbNp6gSSYOn0ETlHK7V/v7QFKC7BPxMAcN5yswXFX3urayIAqWvuwxKjT1PlEGI6nWsXRviPiDEXbYs3LpZAWYCAN5MachyGw5DQUEq+NNRpk5tN2hUqVKnEFSpUqxj//Z" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Rang De Basanti
+                    </div>
+                    <p style = "color: grey;" >
+                        A R Rahman
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song5 end -->
+
+
+
+          <!-- song6 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    06
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLnYBuvmLB7P3pr-LUrwcoBaJQL8CJgaGLL2jLbCjVfZo47M2puG7Itz8kzGXHPzVVqNc&usqp=CAU" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Saathiya
+                    </div>
+                    <p style = "color: grey;" >
+                        Sonu Nigam
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song6 end -->
+
+
+
+          <!-- song7 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    07
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://a10.gaanacdn.com/images/albums/14/1410914/crop_480x480_1410914.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Sapna Jahaan
+                    </div>
+                    <p style = "color: grey;" >
+                        Sonu Nigam
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song7 end -->
+
+
+
+          <!-- song8 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    08
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://i.ytimg.com/vi/16QycimH9lU/maxresdefault.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Tu Hi Re
+                    </div>
+                    <p style = "color: grey;" >
+                        Hariharan
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song8 end -->
+
+
+
+          <!-- song9 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    09
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://c.saavncdn.com/267/Tum-Tak-Remix--Hindi-2022-20220324165607-500x500.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Tum Tak
+                    </div>
+                    <p style = "color: grey;" >
+                        Javed Ali
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song9 end -->
+
+
+
+          <!-- song10 start -->
+          <div class=playlist-item>
+            <div class="left-content">
+                <!-- index -->
+                <div style="margin-right:4px; color: grey;">
+                    10
+                </div>
+                <div  >
+                    <!-- coverer class is for those items which when hovered will show an effect -->
+                    <!-- in this effect, when the user hovers on the item, it will show black background -->
+                    <!-- with opacity value less than 1 and a play button icon at the center -->
+                    <img src="https://i.ytimg.com/vi/ZdmLkvjn0IY/maxresdefault.jpg" alt = "jhoome-jo-pathan" style = "border-radius: 0px; ">
+                    <!-- <div class="play-button">
+                        <i class="fas fa-play" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <!-- name and author of the song -->
+                <div>
+                    <div style = "color: white;">
+                        Halki Si Barsat 
+                    </div>
+                    <p style = "color: grey;" >
+                        Saaj Bhatt
+                    </p>
+                </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+
+          <!-- song10 end -->
+
+
+
+        </div >
+
+       
+        <!-- trending news section -->
+        <div class = "trending-news-header">
+         
+          <h3>Trending News</h3>
+  
+         
+        </div>
+             
+          <!-- list of trending news -->
+        <div class = "trending-news-list" style = " margin-top: 5%;">
+          <ul >
+           <li> <img src = "https://static.toiimg.com/thumb/msid-100259141,imgsize-77616,width-400,resizemode-4/100259141.jpg" alt = "akshay news"> <span class = "news-headline"> Akshay Kumar, B Praak's sad romantic track "Kya Loge Tum" out now </span> <span class = "new-news">NEW</span> 
+  </li> 
+          
+           
+         
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100280027,imgsize-54444,width-400,resizemode-4/100280027.jpg" alt = "akshay news"> <span class = "news-headline"> Jubin Nautiyal releases bew track "Hai Kaisi Kaisi" </span> <span  class = "new-news">NEW</span> </li> 
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100222960,imgsize-24658,width-400,resizemode-4/100222960.jpg" alt = "akshay news"> <span class = "news-headline"> Mother's Day special: Lata mangeshkar's deep bonding with maternal songs </span  > <span class = "new-news">NEW</span> </li> 
+           
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100201415,imgsize-41512,width-400,resizemode-4/100201415.jpg" alt = "akshay news"> <span class = "news-headline"> Singer Papon hospitalized, fans express concerned  </span> </li> 
+           
+           
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100202653,imgsize-42000,width-400,resizemode-4/100202653.jpg" alt = "akshay news"> <span class = "news-headline"> Rohit Shetty launches Raj Pandit's romantic track "Maahoul" calls it "incredible" </span> </li> 
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100205805,imgsize-14778,width-400,resizemode-4/100205805.jpg" alt = "akshay news"> <span class = "news-headline"> Armaan Malik calls "HIIR" his boldest collaboration </span></li> 
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100296869,imgsize-58196,width-400,resizemode-4/100296869.jpg" alt = "akshay news"> <span class = "news-headline"> Chris Gayle on "Oh Fatima": Great song, great locations, super collab with arko  </span> </li> 
+          
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100201415,imgsize-41512,width-400,resizemode-4/100201415.jpg" alt = "akshay news"> <span class = "news-headline"> Singer Papon hospitalized, fans express concerned  </span> </li> 
+           
+           
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100202653,imgsize-42000,width-400,resizemode-4/100202653.jpg" alt = "akshay news"> <span class = "news-headline"> Rohit Shetty launches Raj Pandit's romantic track "Maahoul" calls it "incredible" </span> </li> 
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100205805,imgsize-14778,width-400,resizemode-4/100205805.jpg" alt = "akshay news"> <span class = "news-headline"> Armaan Malik calls "HIIR" his boldest collaboration </span></li> 
+         
+
+           
+         
+           
+           
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100202653,imgsize-42000,width-400,resizemode-4/100202653.jpg" alt = "akshay news"> <span class = "news-headline"> Rohit Shetty launches Raj Pandit's romantic track "Maahoul" calls it "incredible" </span> </li> 
+           <li>  <img src = "https://static.toiimg.com/thumb/msid-100205805,imgsize-14778,width-400,resizemode-4/100205805.jpg" alt = "akshay news"> <span class = "news-headline"> Armaan Malik calls "HIIR" his boldest collaboration </span></li> 
+         
+          </ul>
+          
+        </div>
+
+       
+
+
+        
+        
+        
+        </aside>
+
+
+
+      </main>
+
+      
+         <!-- this is bottom section including social media links, privacy policy etc... -->
+         <bottom id = "bottom">
+
+           
+
+          <!-- suno jo man chaahe -->
+          <div id = "gaana-studio-slogan"> <h1>Suno Jo Man Chaahe</h1> </div>
+
+          <p>Gaana Studio offers you free Top Hindi songs, Bollywood music, Punjabi hits and Bhakti songs.</p>
+
+          <hr/>
+
+          <!-- social media links -->
+          <div id = "social-media">
+           
+            <ul type = "none"> 
+              <li> <a href = "#facebook"> <i class="fa-brands fa-facebook"></i> </a> </li>
+              <li> <a href = "#twitter"> <i class="fa-brands fa-twitter"></i> </a> </li>
+              <li> <a href = "#instagram"> <i class="fa-brands fa-instagram"></i> </a> </li>
+
+            </ul>
+          </div>
+
+          <hr/>
+
+          <div >
+            <ul style = "position: relative; left: 27%;">
+             <li style = "font-size: 1rem;"> <a href = "#legal">Legal</a> </li> 
+             <li style = "font-size: 1rem;"> <a href = "#privacy-center">Privacy Center</a> </li> 
+             <li style = "font-size: 1rem;"> <a href = "#privacy-policy">Privacy Policy</a> </li> 
+             <li style = "font-size: 1rem;"> <a href = "#cookies">Cookies</a> </li> 
+             <li style = "font-size: 1rem;"> <a href = "#aboutus">About Us</a> </li> 
+            </ul> 
+          </div>
+
+          
+          
+        
+      
+      </bottom>
+      <!-- this is ending of bottom section area -->
+
+
+      <!-- javascript file link -->
+      <script src = "script.js"> </script>
+ 
+  </body>
+</html>
